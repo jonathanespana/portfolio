@@ -1,15 +1,42 @@
 {% extends 'main_app/base.html' %}
 
 {% block content %}
-<h1>Jonathan España</h1>
-<h3>Creative Full-stack Software Engineer & Designer</h3>
-<p>
-    bridging the gap in style and function, to create efficient and immersive user experiences.
-</p>
-<p>
-    Striking balance between aesthetics and functionality to create rich user experiences.
-</p>
-<p>
-    I am a full stack software engineer with over three years of experience.  I've cross-functional teams in the development of high-quality solutions under tight deadlines as a Technical Lead.  As a developer I thrive on challenges and am dedicated to delivering effective and elegant software solutions.
-</p>
+<div class="splash">
+    <div class="splash-img">
+        <picture>
+            <source media="(min-width: 992px)"
+                srcset="https://espana-portfolio.s3.us-west-1.amazonaws.com/lg-heres-johnny.avif" />
+            <source media="(min-width: 768px)"
+            srcset="https://espana-portfolio.s3.us-west-1.amazonaws.com/md-heres-johnny.avif" />
+            <img src="https://espana-portfolio.s3.us-west-1.amazonaws.com/xs-heres-johnny.avif"
+                alt="The Shining, here's Johnny">
+        </picture>
+    </div>
+    <div class="splash-content">
+        <div class="splash-title">
+            <h1>jonny espana</h1>
+        </div>
+        <div class="splash-subtitle">
+            <h3>full-stack</h3>
+            <h3>software developer</h3>
+        </div>
+    </div>
+</div>
+<div class="who">
+    <div class="who-header">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+                <div class="who-headshot">
+                    <img src="https://espana-portfolio.s3.us-west-1.amazonaws.com/jon_headshot.jpeg">
+                </div>
+            </div>
+            <div class="col">
+                <div class="who-content">
+                    <p>I'm a Full-stack Software Developer and UX/UI enthusiast! Building practical and polished digital experiences.  Recently collaborating with Gem Nightclub, a staple in the Salt Lake City's nightlife.  Worked to co-found SweepApp, Inc. and revolutionize the cleaning industry <a href="https://www.techbuzz.news/sweep-launches-a-gig-app-for-cleaning-services/">(checkout TechBuzz's article)</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock content %}

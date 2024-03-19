@@ -1,0 +1,153 @@
+@import '../../bootstrap/scss/bootstrap.scss';
+
+@font-face {
+    font-family: 'Danzig-4p';
+    src:url('../fonts/danzig-fonts/Danzig-4p.ttf.woff') format('woff'),
+        url('../fonts/danzig-fonts/Danzig-4p.ttf.svg#Danzig-4p') format('svg'),
+        url('../fonts/danzig-fonts/Danzig-4p.ttf.eot'),
+        url('../fonts/danzig-fonts/Danzig-4p.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #1f1f1f;
+    background: whitesmoke;
+    min-height: 100vh;
+}
+
+.splash {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    .splash-img {
+        width: 100vw;
+        height: 100%;
+        border-radius: 5px;
+        overflow: hidden;
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
+/* .splash-img::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 110%;
+    height: 110%;
+    left: -5%;
+    top: -5%;
+    background-image: url('https://espana-portfolio.s3.us-west-1.amazonaws.com/xs-heres-johnny.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(40px);
+    opacity: .6;
+} */
+
+
+.splash-content {
+    color: #5d5d5d;
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    h1 { 
+        margin: 5px;
+        font-family: 'Danzig-4p';
+        font-style: italic;
+        font-size: 3.5rem;
+        font-weight: 700;
+        text-shadow: -3px -3px 5px rgba(255, 255, 255, 1);
+        letter-spacing: 2px;
+        text-align: center;
+        position: relative;
+    }
+
+    h1::before {
+        content: "here's";
+        position: absolute;
+        font-size: 2.75rem;
+        font-style: italic;
+        top: -50px;
+    }
+    
+    h3 { 
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0px;
+        color: whitesmoke;
+    } 
+}
+
+.who {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.who-header {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+
+    .who-headshot-col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .who-headshot {
+        height: 300px;
+        width: 300px;
+        max-width: 450px;
+        position: relative;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    img {
+        height: 300px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .who-content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    p {
+        max-width: 600px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+/* ===== Responsive Styles ====== */
